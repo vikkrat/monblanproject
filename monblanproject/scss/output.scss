@@ -1,0 +1,300 @@
+// @import "http://fonts.fontstorage.com/import/amble.css";
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../assets/fonts/ProximaNova-Regular.woff') format('opentype');
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+input {
+  width: 160px;
+  padding: 3px;
+}
+#ui-datepicker-div {
+  top: 160px !important;
+}
+header {
+  padding: 30px;
+  .header_container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 55%;
+    .header_logo {
+      padding-right: 110px;
+    }
+    .header_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .header_content_title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        .label {
+          margin-right: 20px;
+          font-family: arial;
+          font-weight: 400;
+          font-size: 26px;
+        }
+        .date {
+          border: 1px solid #69c0dc;
+          padding: 5px;
+          color: #69c0dc;
+          border-radius: 3px;
+        }
+      }
+      .header_content-details {
+        display: flex;
+        margin-bottom: 14px;
+
+        .details {
+          font-weight: bold;
+          margin-right: 20px;
+        }
+        span {
+          color: gray;
+          font-weight: normal;
+          font-family: arial;
+          font-size: 14px;
+        }
+      }
+      .header_content_form {
+        form {
+          display: flex;
+          align-items: center;
+          position: relative;
+          label {
+            margin-right: 10px;
+          }
+          #fromDate {
+            position: relative;
+            outline: none !important;
+          }
+          .closeFromData {
+            position: relative;
+            right: 53px;
+            background-color: #ddd;
+            width: 26px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid gray;
+            border-left: 1px solid gray;
+          }
+          .rangeFromDate {
+            position: relative;
+            right: 53px;
+            background-color: #ddd;
+            width: 26px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          #toDate {
+            position: relative;
+            outline: none !important;
+          }
+          .closeToData {
+            position: relative;
+            right: 53px;
+            background-color: #ddd;
+            width: 26px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid gray;
+            border-left: 1px solid gray;
+          }
+          .rangeToDate {
+            position: relative;
+            right: 53px;
+            background-color: #ddd;
+            width: 26px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+.grid_container {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 96%;
+  background-color: rgb(245, 244, 244);
+}
+.grid_content {
+  //   width: 90vw;
+  margin: 0 auto;
+  max-width: 64%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  font-size: 17px;
+  line-height: 24px;
+  color: #ffffff;
+  font-family: 'Proxima Nova';
+  padding: 50px 0 80px 0;
+  //
+}
+
+span {
+  font-weight: bold;
+}
+
+.grid__item {
+  background-repeat: no-repeat;
+  width: 292px;
+  height: 292px;
+  margin: 0 auto;
+  filter: brightness(70%);
+  &:nth-child(1) {
+    background: #00ff87 url(../assets/img/image_001.png);
+  }
+  &:nth-child(2) {
+    background: #00ff87 url(../assets/img/image_002.png);
+  }
+  &:nth-child(3) {
+    background: #00ff87 url(../assets/img/image_003.png);
+  }
+  &:nth-child(4) {
+    background: #00ff87 url(../assets/img/image_004.png);
+  }
+  &:nth-child(5) {
+    background: #00ff87 url(../assets/img/image_005.png);
+  }
+  &:nth-child(6) {
+    background: #00ff87 url(../assets/img/image_006.png);
+  }
+  &:nth-child(7) {
+    background: #00ff87 url(../assets/img/image_007.png);
+  }
+  &:nth-child(8) {
+    background: #00ff87 url(../assets/img/image_008.png);
+  }
+  &:nth-child(9) {
+    background: #00ff87 url(../assets/img/image_009.png);
+  }
+  &_shadow {
+    padding-top: 150px;
+    // display: flex;
+  }
+  &:hover {
+    filter: brightness(100%);
+  }
+}
+
+.today {
+  margin: 10px 0px 10px 20px;
+  display: grid;
+  grid-template-columns: minmax(80px, 1fr) 1fr 1fr;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.img_upload {
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.mainLoad-btn {
+  position: relative;
+  top: -40px;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 0 auto;
+  text-transform: uppercase;
+  padding: 5px 30px;
+  cursor: pointer;
+  font-size: 12px;
+}
+@media (max-width: 1024px) {
+  .grid_content {
+    max-width: unset;
+  }
+  .header_container {
+    flex-direction: column;
+  }
+  header .header_container .header_logo {
+    widows: 200px;
+    padding-right: 0;
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  header .header_container .header_content .header_content_title {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  header .header_container .header_content .header_content_title .label {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  header .header_container .header_content .header_content-details .details {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  header .header_container .header_content .header_content_form form {
+    flex-direction: column;
+  }
+  header
+    .header_container
+    .header_content
+    .header_content_form
+    form
+    .closeFromData {
+    top: -23px;
+    right: -39px;
+  }
+  header
+    .header_container
+    .header_content
+    .header_content_form
+    form
+    .rangeFromDate {
+    right: -65px;
+    top: -46px;
+  }
+  header
+    .header_container
+    .header_content
+    .header_content_form
+    form
+    .closeToData {
+    top: -23px;
+    right: -39px;
+  }
+  header
+    .header_container
+    .header_content
+    .header_content_form
+    form
+    .rangeToDate {
+    right: -65px;
+    top: -46px;
+  }
+  #ui-datepicker-div {
+    transform: translate(-18%, 0%) !important;
+    top: 378px !important;
+  }
+  header .header_container .header_content .header_content_form form input {
+    border: 1px solid #ddd;
+  }
+  header .header_container .header_content .header_content-details {
+    justify-content: center;
+  }
+}

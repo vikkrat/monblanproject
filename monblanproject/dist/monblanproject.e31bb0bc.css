@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/ProximaNova-Regular.d677b782.woff") format("opentype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input {
+  width: 160px;
+  padding: 3px;
+}
+
+#ui-datepicker-div {
+  top: 160px !important;
+}
+
+header {
+  padding: 30px;
+}
+header .header_container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 55%;
+}
+header .header_container .header_logo {
+  padding-right: 110px;
+}
+header .header_container .header_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header .header_container .header_content .header_content_title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+header .header_container .header_content .header_content_title .label {
+  margin-right: 20px;
+  font-family: arial;
+  font-weight: 400;
+  font-size: 26px;
+}
+header .header_container .header_content .header_content_title .date {
+  border: 1px solid #69c0dc;
+  padding: 5px;
+  color: #69c0dc;
+  border-radius: 3px;
+}
+header .header_container .header_content .header_content-details {
+  display: flex;
+  margin-bottom: 14px;
+}
+header .header_container .header_content .header_content-details .details {
+  font-weight: bold;
+  margin-right: 20px;
+}
+header .header_container .header_content .header_content-details span {
+  color: gray;
+  font-weight: normal;
+  font-family: arial;
+  font-size: 14px;
+}
+header .header_container .header_content .header_content_form form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header .header_container .header_content .header_content_form form label {
+  margin-right: 10px;
+}
+header .header_container .header_content .header_content_form form #fromDate {
+  position: relative;
+  outline: none !important;
+}
+header .header_container .header_content .header_content_form form .closeFromData {
+  position: relative;
+  right: 53px;
+  background-color: #ddd;
+  width: 26px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+}
+header .header_container .header_content .header_content_form form .rangeFromDate {
+  position: relative;
+  right: 53px;
+  background-color: #ddd;
+  width: 26px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header_container .header_content .header_content_form form #toDate {
+  position: relative;
+  outline: none !important;
+}
+header .header_container .header_content .header_content_form form .closeToData {
+  position: relative;
+  right: 53px;
+  background-color: #ddd;
+  width: 26px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+}
+header .header_container .header_content .header_content_form form .rangeToDate {
+  position: relative;
+  right: 53px;
+  background-color: #ddd;
+  width: 26px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid_container {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 96%;
+  background-color: #f5f4f4;
+}
+
+.grid_content {
+  margin: 0 auto;
+  max-width: 64%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  font-size: 17px;
+  line-height: 24px;
+  color: #ffffff;
+  font-family: "Proxima Nova";
+  padding: 50px 0 80px 0;
+}
+
+span {
+  font-weight: bold;
+}
+
+.grid__item {
+  background-repeat: no-repeat;
+  width: 292px;
+  height: 292px;
+  margin: 0 auto;
+  filter: brightness(70%);
+}
+.grid__item:nth-child(1) {
+  background: #00ff87 url(/image_001.01241646.png);
+}
+.grid__item:nth-child(2) {
+  background: #00ff87 url(/image_002.d71bac0f.png);
+}
+.grid__item:nth-child(3) {
+  background: #00ff87 url(/image_003.a5b8e0ad.png);
+}
+.grid__item:nth-child(4) {
+  background: #00ff87 url(/image_004.dadb474a.png);
+}
+.grid__item:nth-child(5) {
+  background: #00ff87 url(/image_005.a862c312.png);
+}
+.grid__item:nth-child(6) {
+  background: #00ff87 url(/image_006.0e594ffc.png);
+}
+.grid__item:nth-child(7) {
+  background: #00ff87 url(/image_007.5500c646.png);
+}
+.grid__item:nth-child(8) {
+  background: #00ff87 url(/image_008.094c136f.png);
+}
+.grid__item:nth-child(9) {
+  background: #00ff87 url(/image_009.8f10ee7a.png);
+}
+.grid__item_shadow {
+  padding-top: 150px;
+}
+.grid__item:hover {
+  filter: brightness(100%);
+}
+
+.today {
+  margin: 10px 0px 10px 20px;
+  display: grid;
+  grid-template-columns: minmax(80px, 1fr) 1fr 1fr;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.img_upload {
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.mainLoad-btn {
+  position: relative;
+  top: -40px;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 0 auto;
+  text-transform: uppercase;
+  padding: 5px 30px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+  .grid_content {
+    max-width: unset;
+  }
+
+  .header_container {
+    flex-direction: column;
+  }
+
+  header .header_container .header_logo {
+    widows: 200px;
+    padding-right: 0;
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  header .header_container .header_content .header_content_title {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  header .header_container .header_content .header_content_title .label {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  header .header_container .header_content .header_content-details .details {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  header .header_container .header_content .header_content_form form {
+    flex-direction: column;
+  }
+
+  header .header_container .header_content .header_content_form form .closeFromData {
+    top: -23px;
+    right: -39px;
+  }
+
+  header .header_container .header_content .header_content_form form .rangeFromDate {
+    right: -65px;
+    top: -46px;
+  }
+
+  header .header_container .header_content .header_content_form form .closeToData {
+    top: -23px;
+    right: -39px;
+  }
+
+  header .header_container .header_content .header_content_form form .rangeToDate {
+    right: -65px;
+    top: -46px;
+  }
+
+  #ui-datepicker-div {
+    transform: translate(-18%, 0%) !important;
+    top: 378px !important;
+  }
+
+  header .header_container .header_content .header_content_form form input {
+    border: 1px solid #ddd;
+  }
+
+  header .header_container .header_content .header_content-details {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=/monblanproject.e31bb0bc.css.map */

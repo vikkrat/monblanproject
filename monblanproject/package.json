@@ -1,0 +1,20 @@
+{
+  "name": "monblanproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel --no-cache index.html --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.22.9"
+  },
+  "dependencies": {
+    "datepicker": "0.0.0",
+    "js-datepicker": "^5.0.0"
+  }
+}
